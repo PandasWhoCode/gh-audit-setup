@@ -62,6 +62,10 @@ If actions have run in the last 6 months then actions shall remain enabled:
 ### Code Security Tab
 - [ ] Dependabot is enabled on the repository
 
+### Advanced Security Tab
+- [ ] Code Scanning is enabled on the repository
+- [ ] Secret Protection is enabled on the repository
+
 ### Secrets and Variables Tab
 - [ ] GitHub secrets are employed to store sensitive data
 - [ ] Tokens are stored securely as GitHub Secrets
