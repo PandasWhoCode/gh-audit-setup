@@ -19,6 +19,12 @@ If actions have run in the last 6 months then actions shall remain enabled:
 ### General Tab
 - [ ] Require contributors to sign off on web-based commits
 
+#### Releases Section:
+- [ ] Check the Enable release immutability option
+
+#### Social Preview Section:
+- [ ] Set an image for the repo, if needed
+
 #### Features Section:
 - [ ] Disable Wiki
   - If it is in use, leave Wiki enabled. If not in use, remove functionality (uncheck Wiki option). Should be disabled whenever possible.
@@ -29,11 +35,15 @@ If actions have run in the last 6 months then actions shall remain enabled:
   
 #### Pull Requests Section:
 - [ ] Enable Allow Squash Merging
+  - Set Default Commit Message to "Pull Request Title"
 - [ ] Enable Always suggest updating pull request branches
 - [ ] Enable Automatically delete head branches
  
 #### Pushes Section:
 - [ ] Pushes: Limit how many branches and tags can be updated in a single push (Default # is 5)
+
+#### Issues Section:
+- [ ] Enable Auto-close issues with merged linked pull requests
 
 ### Collaborators and Teams Tab
 - [ ] Teams are assigned to the repository
@@ -59,12 +69,10 @@ If actions have run in the last 6 months then actions shall remain enabled:
 - [ ] All webhooks present are needed and in use
 - [ ] Snyk is enabled on the repo (check to see if the webhook exists and is in use)
 
-### Code Security Tab
-- [ ] Dependabot is enabled on the repository
-
 ### Advanced Security Tab
-- [ ] Code Scanning is enabled on the repository
 - [ ] Secret Protection is enabled on the repository
+- [ ] Dependabot is enabled on the repository
+- [ ] Code Scanning is enabled on the repository
 
 ### Secrets and Variables Tab
 - [ ] GitHub secrets are employed to store sensitive data
