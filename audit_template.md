@@ -20,7 +20,7 @@ If actions have run in the last 6 months then actions shall remain enabled:
 - [ ] Require contributors to sign off on web-based commits
 
 #### Releases Section:
-- [ ] Check the Enable release immutability option
+- [ ] Check the Enable release immutability option (improves security by disallowsing assets and tags from being modified once published)
 
 #### Social Preview Section:
 - [ ] Set an image for the repo, if needed
@@ -32,12 +32,17 @@ If actions have run in the last 6 months then actions shall remain enabled:
 - [ ] Enable Preserve this Repository
 - [ ] Enable Discussions if repository is public
 - [ ] Enable Projects
+- [ ] Pull Requests
+   - Prefer `Collaborators Only` but must review on each repo.
   
 #### Pull Requests Section:
 - [ ] Enable Allow Squash Merging
   - Set Default Commit Message to "Pull Request Title"
 - [ ] Enable Always suggest updating pull request branches
 - [ ] Enable Automatically delete head branches
+
+#### Commits Section
+- [ ] Check the `Allow comments on individual commits` option
  
 #### Pushes Section:
 - [ ] Pushes: Limit how many branches and tags can be updated in a single push (Default # is 5)
@@ -51,8 +56,9 @@ If actions have run in the last 6 months then actions shall remain enabled:
 
 ### Branches Tab
 - [ ] Individual branch protections are turned off
+  - Exception: Branch protection rule for Trunk.io Merge Queues (restriction on pushes to `main`)
 
-### Tags Tab
+### Tags Tab 
 - [ ] Individual tag protections are turned off
 
 ### Rules/Rulesets Tab
@@ -73,6 +79,7 @@ If actions have run in the last 6 months then actions shall remain enabled:
 - [ ] Secret Protection is enabled on the repository
 - [ ] Dependabot is enabled on the repository
 - [ ] Code Scanning is enabled on the repository
+- [ ] CodeQL Analysis
 
 ### Secrets and Variables Tab
 - [ ] GitHub secrets are employed to store sensitive data
